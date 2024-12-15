@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 767px) { 
+    .navbar{
+        display:none;
+    }
+}
+
 /* Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
