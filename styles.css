@@ -4,6 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+.robot{
+    max-width: 300px;
+    border-radius: 10px
+}
+
+.about{
+    max-width: 400px;
+    border-radius: 10px;
+}
 
 /* Body Styling */
 body {
@@ -151,15 +160,7 @@ p {
 }
 
 
-.robot{
-    max-width: 300px;
-    border-radius: 10px
-}
 
-.about{
-    max-width: 400px;
-    border-radius: 10px;
-}
 
 /* Blog Section Styles */
 .blog-section {
