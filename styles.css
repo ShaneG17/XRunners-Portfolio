@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-@media (max-width: 1000px)
 
 /* Body Styling */
 body {
@@ -25,10 +24,6 @@ body {
     border-radius: 0; /* Adjusted radius to avoid rounded corners */
     box-shadow: 0 4px 15px rgba(255, 75, 92, 0.3); /* Red shadow */
     position: fixed;
-    top: 0; /* Adjusted top to fix navbar at the top */
-    left: 0;
-    right: 0;
-    z-index: 10;
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
     border-radius:25px;
     width: 1400px;
