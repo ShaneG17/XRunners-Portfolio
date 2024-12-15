@@ -1,0 +1,331 @@
+/* General Reset and Box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;  /* Changed background to blue */
+    color: #333;
+    line-height: 1.6;
+}
+.sponsor{
+    margin: auto
+}
+
+/* Navigation Bar */
+.navbar {
+    background: rgba(0, 0, 0, 0.5); /* Transparent background */
+    padding: 15px 30px;
+    margin: auto; /* Removed margin to avoid white gap */
+    border-radius: 0; /* Adjusted radius to avoid rounded corners */
+    box-shadow: 0 4px 15px rgba(255, 75, 92, 0.3); /* Red shadow */
+    position: fixed;
+    top: 0; /* Adjusted top to fix navbar at the top */
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    border-radius:25px;
+    width: 1400px;
+}
+
+.navbar:hover {
+    background: rgba(0, 0, 0, 0.7); /* Slightly darker on hover */
+    box-shadow: 0 10px 40px rgba(255, 75, 92, 0.4); /* Stronger red shadow on hover */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ff4b5c; /* Hover color */
+}
+
+/* Hero Section with Gradient */
+.hero {
+    background: linear-gradient(135deg, #009cde, #005f8f);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 0; /* Removed margin-top */
+}
+
+/* Ensure the hero content stays visible */
+.hero-content {
+    padding: 30px;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #fff; /* Fixed the color to white */
+}
+
+.cta-btn {
+    background-color: #ff4b5c;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff2d44;
+    transform: translateY(-5px);
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #005f8f;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+
+.robot{
+    width: 200px;
+    border-radius: 10px
+}
+
+/* Blog Section Styles */
+.blog-section {
+    background: linear-gradient(135deg, #f0f4f8, #c4e0ff);
+    padding: 80px 20px;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.blog-post {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(255, 75, 92, 0.3); /* Red shadow */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 75, 92, 0.4); /* Stronger red shadow on hover */
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-post h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #005f8f;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #ff4b5c;
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Sponsors Section */
+#sponsors .sponsors {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+#sponsors .sponsor {
+    background-color: rgba(255, 75, 92, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(255, 75, 92, 0.3); /* Red shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sponsors .sponsor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 75, 92, 0.4); /* Stronger red shadow on hover */
+}
+
+#sponsors img {
+    max-width: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    padding: auto;
+}
+.team-pic{
+    width: 600px;
+    border-width: 25px;
+    border-color: black;
+    border-radius: 20px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-size: 1.1rem;
+    color: #005f8f;
+    text-transform: uppercase;
+}
+
+input, textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+button {
+    background-color: #ff4b5c;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff2d44;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    .blog-posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-post {
+        width: 100%;
+    }
+}
