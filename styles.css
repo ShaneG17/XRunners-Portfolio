@@ -1,5 +1,4 @@
-
-to/* General Reset and Box-sizing */
+/* General Reset and Box-sizing */
 * {
     margin: 0;
     padding: 0;
@@ -25,14 +24,13 @@ body {
     border-radius: 0; /* Adjusted radius to avoid rounded corners */
     box-shadow: 0 4px 15px rgba(255, 75, 92, 0.3); /* Red shadow */
     position: fixed;
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
-    border-radius:25px;
-    width: 1400px;
     top: 0; /* Adjusted top to fix navbar at the top */
     left: 0;
     right: 0;
     z-index: 10;
-    max-length: 1000px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    border-radius:25px;
+    width: 1400px;
 }
 
 .navbar:hover {
